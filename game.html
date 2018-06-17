@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Duet Battle Game</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/animation.css" rel="stylesheet">
+  <link href="css/bg-img.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="contentWrapper" class="content-wrapper">
+    <div id="playerProfilePage" class="profile-page">
+      <h2 class="game-heading">Duel Battle
+        <br /> Game</h2>
+      <div id="checkinBlock" class="checkin-block">
+        <p class="checkin-paragraph">Please enter your information</p>
+        <form id="profileForm">
+          <div class="profile-input-box">
+            <input id="playerFirstName" class="profile-input" name="first" placeholder="First name*" required>
+          </div>
+          <div class="profile-input-box">
+            <input id="playerLastName" class="profile-input" name="last" placeholder="Last name*" required>
+          </div>
+          <button id="startButton" type="submit" class="game-button">Let`s Start</button>
+        </form>
+      </div>
+      <div id="newGameButtons" class="new-game-buttons-block">
+        <button type="button" class="game-button">
+          <a class="new-game-link" href="index.html">About</a>
+        </button>
+        <button type="button" id="newGameButton" class="game-button">New Game</button>
+      </div>
+    </div>
+    <div id="gameFild" class="game-fild game-fild-background">
+      <div class="game-fild-content">
+        <div class="character-info-block">
+          <div class="character-info">
+            <h3 id="playerName" class="character-name"></h3>
+            <p id="playerHealthPoints" class="character-health-points"></p>
+            <div class="player-hp-red-line">
+              <div id="playerHpGreenLine" class="hp-green-line"></div>
+            </div>
+          </div>
+          <div class="rounds">
+            <button id="chooseSpellButton" type="button" class="choose-spell-button">Choose Your Spell</button>
+            <h3 id="roundHeading" class="round-number"></h3>
+          </div>
+          <div class="character-info">
+            <h3 id="monsterName" class="character-name"></h3>
+            <p id="monsterHealthPoints" class="character-health-points"></p>
+            <div class="monster-hp-red-line">
+              <div id="monsterHpGreenLine" class="hp-green-line"></div>
+            </div>
+          </div>
+        </div>
+        <div id=" charactersBlock" class="character-block">
+          <div id="playerBlock" class="character"></div>
+          <div id="monsterBlock" class="monsterBlock"></div>
+        </div>
+      </div>
+    </div>
+    <div id="spellWindowConteiner" class="spell-window-conteiner">
+      <div id="spellWindow" class="spell-window">
+        <h3 class="spell-heading">Choose Your Spell</h3>
+        <div class="spell-buttons-block">
+          <button id="healingSpell" class="spell-button" type="button">
+            <img class="spell-img" src="images/healing-spell.png ">
+          </button>
+          <button id="attackSpell" class="spell-button" type="button">
+            <img class="spell-img" src="images/rage-spell.png ">
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="taskWindowConteiner" class="task-window-conteiner">
+      <div id="taskWindow" class="task-window">
+        <div id="mediaBlock" class="media-block"></div>
+        <h3 id="taskHeading" class="task-heading"></h3>
+        <form id="taskForm" class="task-form">
+          <input type="text" class="task-input" id="taskInput" placeholder="answer*" autocomplete="off" autofocus required>
+          <div class="task-buttons">
+            <button id="cancelTaskButton" class="task-button" type="button">Back</button>
+            <button id="taskButton" class="task-button" type="submit">Answer</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="tableWindow" class="game-score-table-block">
+      <h3 class="game-heading">Game Over</h3>
+      <table id="scoreTable" class="game-score-table"></table>
+      <button id="startAgainButton" type="button" class="game-button">Ones Again!!!</button>
+    </div>
+  </div>
+  <script type="text/javascript" src="dist/bundle.js"></script>
+</body>
+
+</html>

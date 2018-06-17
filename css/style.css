@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Montresor";
+    src: url(../fonts/Montresor.ttf);
+}
+
+.content-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(124, 121, 129);
+}
+
+.profile-page {
+    text-align: center;
+    width: 85%;
+    height: 85%;
+    background: #FC354C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0ABFBC, #FC354C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.game-heading {
+    color: #ffd890;
+    font-size: 50px;
+    margin: 7% 0;
+}
+
+.checkin-block {
+    display: none;
+}
+
+.new-game-buttons-block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.checkin-paragraph {
+    color: #ffd890;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.profile-input-box {
+    margin-bottom: 30px;
+}
+
+.profile-input {
+    margin-top: 10px;
+    min-width: 200px;
+    min-height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 10px;
+
+}
+
+.profile-label {
+    color: #ffd890;
+    font-size: 25px;
+}
+
+.game-button {
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 55px;
+    background-color: #7d7a82;
+    border: 0;
+    outline: none;
+    color: #ffd890;
+    cursor: pointer;
+}
+
+.game-button:active {
+    transform: translateY(4px);
+}
+
+.new-game-link {
+    color: #ffd890;
+    text-decoration: none;
+}
+
+.game-fild {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.game-fild-content {
+    height: 100%;
+    width: 90%;
+}
+
+.character-info-block {
+    display: flex;
+    width: 100%;
+    height: 45%;
+    justify-content: space-between;
+}
+
+.character-info {
+    padding-top: 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.character-name {
+    font-family: Montresor;
+    font-size: 32px;
+    color: antiquewhite;
+    letter-spacing: 1px;
+}
+
+.rounds {
+    text-align: center;
+    margin-left: 6.5%;
+}
+
+.round-number {
+    font-family: Montresor;
+    font-size: 35px;
+    color: #000;
+    margin: 25% 0;
+}
+
+.character-health-points {
+    font-family: Montresor;
+    margin: 15px 0;
+    font-size: 35px;
+    color: antiquewhite;
+}
+
+.hp-green-line {
+    height: 25px;
+    width: 250px;
+    border-radius: 5px;
+    background-color: #0ca40c;
+    margin-top: 0;
+}
+
+.monster-hp-red-line {
+    height: 25px;
+    justify-content: flex-end;
+    display: flex;
+    width: 250px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #c40000;
+}
+
+.player-hp-red-line {
+    height: 25px;
+    justify-content: flex-start;
+    display: flex;
+    width: 250px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #c40000;
+}
+
+.character-block {
+    height: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.character {
+    width: 620px;
+    height: 534px;
+}
+
+.spell-window-conteiner {
+    width: 100%;
+    display: none;
+    height: 100%;
+    justify-content: center;
+    background-color: rgba(158, 158, 158, 0.52);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.spell-window {
+    display: flex;
+    width: 50%;
+    height: 65%;
+    background-color: #5a3b96;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    position: fixed;
+    top: 15%;
+    left: 23%;
+}
+
+.spell-img {
+    max-width: 100%;
+}
+
+.spell-heading {
+    margin-bottom: 12%;
+    color: #e2ddeb;
+    font-size: 30px;
+}
+
+.spell-buttons-block {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.spell-button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgba(108, 52, 153, 0);
+    outline: none;
+}
+
+.play-btn {
+    height: 45px;
+    width: 200px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+}
+
+.spell-button:active {
+    transform: translateY(4px);
+}
+
+.choose-spell-button {
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 10%;
+    background-color: #5a3b96;
+    border: 0;
+    outline: none;
+    color: #ffd890;
+    cursor: pointer;
+}
+
+.task-window-conteiner {
+    width: 100%;
+    display: none;
+    height: 100%;
+    justify-content: center;
+    background-color: rgba(158, 158, 158, 0.52);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.task-window {
+    width: 50%;
+    height: 65%;
+    display: flex;
+    background-color: #5a3b96;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    position: fixed;
+    top: 15%;
+    left: 23%;
+}
+
+.task-heading {
+    color: #e2ddeb;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.monster-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-button {
+    color: #fed98f;
+    font-size: 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #7c7981;
+    border: 0;
+    outline: none;
+}
+.task-button:active {
+    transform: translateY(4px);
+}
+
+.monsterBlock {
+    position: absolute;
+    right: 125px;
+    bottom: 3%;
+}
+
+.monster-details img {
+    width: 170px;
+}
+
+.task-input {
+    width: 70%;
+    font-size: 40px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin: 10% 0;
+    color: #757575;
+}
+
+.game-score-table-block {
+    width: 85%;
+    height: 85%;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(75, 30, 158, 0.7);
+}
+
+.game-score-table {
+    border-collapse: collapse;
+    text-align: center;
+    width: 70%;
+    margin-bottom: 10%;
+}
+
+.table,
+th,
+td {
+    border: 2px solid #fed98f;
+    border-collapse: collapse;
+    padding: 3%;
+    font-size: 25px;
+    color: #fed98f;
+    font-family: Montresor;
+    letter-spacing: 1px;
+}

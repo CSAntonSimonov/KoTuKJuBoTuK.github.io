@@ -1,0 +1,92 @@
+.game-fild-background {
+    background: url(../images/background.jpg) no-repeat center top / cover;
+}
+
+.player-idle-sprite {
+    background: url(../images/ninja-sprites/player-idle.png);
+    background-position-y: center;
+}
+
+.player-attack-sprite {
+    background: url(../images/ninja-sprites/player-attack.png);
+}
+
+.player-damage-sprite {
+    background: url(../images/ninja-sprites/player-damage.png);
+}
+
+.player-dead-sprite {
+    background: url(../images/ninja-sprites/player-dead.png);
+}
+
+.robot-attack-sprite {
+    background: url(../images/monster-sprites/robot-attack.png);
+}
+
+.dino-attack-sprite {
+    background: url(../images/monster-sprites/dino-attack.png);
+}
+
+.freeknight-attack-sprite {
+    background: url(../images/monster-sprites/freeknight-attack.png);
+}
+
+.jack-attack-sprite {
+    background: url(../images/monster-sprites/jack-attack.png);
+}
+
+.dog-attack-sprite {
+    background: url(../images/monster-sprites/dog-attack.png);
+}
+
+.cat-attack-sprite {
+    background: url(../images/monster-sprites/cat-attack.png);
+}
+
+.robot-damage-sprite {
+    background: url(../images/monster-sprites/robot-damage.png);
+}
+
+.dino-damage-sprite {
+    background: url(../images/monster-sprites/dino-damage.png);
+}
+
+.freeknight-damage-sprite {
+    background: url(../images/monster-sprites/freeknight-damage.png);
+}
+
+.jack-damage-sprite {
+    background: url(../images/monster-sprites/jack-damage.png);
+}
+
+.dog-damage-sprite {
+    background: url(../images/monster-sprites/dog-damage.png);
+}
+
+.cat-damage-sprite {
+    background: url(../images/monster-sprites/cat-damage.png);
+}
+
+.robot-dead-sprite {
+    background: url(../images/monster-sprites/robot-dead.png);
+}
+
+.dino-dead-sprite {
+    background: url(../images/monster-sprites/dino-dead.png);
+}
+
+.freeknight-dead-sprite {
+    background: url(../images/monster-sprites/freeknight-dead.png);
+}
+
+.jack-dead-sprite {
+    background: url(../images/monster-sprites/jack-dead.png);
+}
+
+.dog-dead-sprite {
+    background: url(../images/monster-sprites/dog-dead.png);
+}
+
+.cat-dead-sprite {
+    background: url(../images/monster-sprites/cat-dead.png);
+}
